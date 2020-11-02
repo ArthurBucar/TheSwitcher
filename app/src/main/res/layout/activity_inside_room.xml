@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsideRoomActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="#FFF"
+        app:titleMarginStart="80dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgAbajur"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abajur"
+        android:layout_below="@id/toolbar">
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/imgLuz"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:src="@drawable/luzzes"></ImageView>
+
+    <TextView
+        android:id="@+id/txtIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/imgAbajur"
+        android:textSize="20sp"
+        android:text="">
+    </TextView>
+
+    <Button
+        android:id="@+id/bntSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:layout_marginTop="16dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtIntent"
+        android:text="OFF">
+
+    </Button>
+
+</RelativeLayout>
